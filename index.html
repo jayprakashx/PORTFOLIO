@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayprakash - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">Jayprakash</div>
+        <nav class="main-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        
+        <div class="hero-text">
+            <p class="role-text">UI/UX Designer & Developer</p>
+            <h1>
+                Hi, I'm <span class="accent-color">Jayprakash</span>
+                <br>
+                from India
+            </h1>
+            </div>
+        
+        <div class="hero-image-container">
+            <img src="port2-Photoroom.png" alt="Jayprakash Portfolio Photo">
+        </div>
+
+    </section>
+
+   <div id="about" class="page-section">
+    
+    <h2>About Me</h2>
+    <p class="bio-text-main">
+        I’m Jay Prakash, a passionate web developer currently learning the MERN Stack. I love turning 
+        ideas into functional and visually appealing web apps using HTML, CSS, and JavaScript, and 
+        I’m now exploring React for dynamic user interfaces. I’ve built projects like a To-Do List App, 
+        Weather App, and a College Management System in hackathons. I believe in learning by building 
+        and constantly improving my skills every day.
+    </p>
+
+    <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> 
+        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+        <p class="tab-links" onclick="opentab('education')">Education</p>
+    </div>
+    
+    <div class="tab-contents active-tab" id="skills">
+        <h2>SKILLS</h2>
+        <div class="skill-category">
+            <h3>Frontend</h3>
+            <p>HTML5, CSS3, JavaScript (ES6), React</p>
+        </div>
+        <div class="skill-category">
+            <h3>Tools</h3>
+            <p>Git, GitHub, VS Code, Figma</p>
+        </div>
+        <div class="skill-category">
+            <h3>Backend (Upcoming)</h3>
+            <p>Node.js, Express.js, MongoDB</p>
+        </div>
+    </div>
+
+    <div class="tab-contents" id="experience">
+        <h2> Experience</h2>
+        <ul>
+            <li>
+                <strong>Smart India Hackathon (2025) — College Management System</strong><br>
+                Worked on a team project to develop a management system handling student and admin data.
+            </li>
+            <li>
+                <strong>Frontend Developer (Self Projects)</strong><br>
+                Built To-Do List, Weather App, and Quote Generator using HTML, CSS, and JavaScript.
+            </li>
+            <li>
+                <strong>Open Source & Learning</strong><br>
+                Regularly pushing code on GitHub and improving skills in React and JavaScript.
+            </li>
+        </ul>
+    </div>
+    
+    <div class="tab-contents" id="education">
+        <h2> Education</h2>
+        <h3>B.Tech in Computer Science</h3>
+        <p><strong>GITA AUTONOMOUS COLLEGE, BHUBNESWAR</strong> — 2023 to 2026</p>
+        <p>Currently pursuing 5th Semester | Focus: Full Stack Web Development & Java DSA</p>
+    </div>
+  
+</div>
+
+       <section id="portfolio" class="page-section">
+       <h2>My Work</h2>
+
+    <div class="project-list">
+        
+       <section id="projects">
+  <h2>🚀 My Projects</h2>
+  <div class="project-list">
+    
+    <!-- To-Do List -->
+    <div class="project-card">
+      <img src="todo-screenshot.jpg" alt="Screenshot of To-Do List App">
+      <div class="layer">
+        <h3>Persistent To-Do List</h3>
+        <p>A client-side task manager that allows users to create, edit, and delete tasks. 
+        Demonstrates CRUD operations and data persistence using Vanilla JavaScript and Local Storage.</p>
+        <div class="tech-stack">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript (Local Storage)</span>
+        </div>
+        <div class="project-links">
+          <a href="https://jayprakashx.github.io/TO-DO-list-Web-app/" target="_blank">🔗 Live Demo</a>
+          <a href="https://github.com/jayprakashx/TO-DO-list-Web-app" target="_blank">💻 GitHub Code</a>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="project-card">
+      <img src="weather-screenshot.jpg" alt="Screenshot of SkyPulse Weather Dashboard">
+      <div class="layer">
+        <h3>SkyPulse – Real-Time Weather Dashboard</h3>
+        <p>A functional weather dashboard that shows real-time data such as temperature, humidity, wind, pressure, 
+        sunrise, and sunset using the OpenWeatherMap API. Designed with a clean and responsive interface.</p>
+        <div class="tech-stack">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript (API Integration)</span>
+        </div>
+        <div class="project-links">
+          <a href="https://jayprakashx.github.io/SkyPulse---Real-Time-Weather-Dashboard/" target="_blank">🔗 Live Demo</a>
+          <a href="https://github.com/jayprakashx/SkyPulse---Real-Time-Weather-Dashboard" target="_blank">💻 GitHub Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- College Management System -->
+    <div class="project-card">
+      <img src="edubridge-screenshot.jpg" alt="Screenshot of EduBridge College Management System">
+      <div class="layer">
+        <h3>EduBridge – College Management System</h3>
+        <p>A full-featured web project built to manage student, faculty, and admin operations efficiently. 
+        Created for Smart India Hackathon participation and demonstrates strong front-end architecture.</p>
+        <div class="tech-stack">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://jayprakashx.github.io/Edu-Bridge/" target="_blank">🔗 Live Demo</a>
+          <a href="https://github.com/jayprakashx/Edu-Bridge" target="_blank">💻 GitHub Code</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</section>
+
+    <section id="contact" class="page-section">
+    <h2>Contact Me</h2>
+
+    <div class="contact-row">
+        
+        <div class="contact-left">
+            <p>I am currently available for freelance projects and new opportunities. Feel free to connect!</p>
+            
+            <div class="contact-info">
+                <p>
+                    <i class="fas fa-envelope"></i> <a href="mailto:jayprakashbahalia@gmail.com">jayprakashbahalia@gmail.com</a>
+                </p>
+                <p>
+                    <i class="fas fa-phone"></i> <a href="tel:+918457844495">+91 84578 44495</a>
+                </p>
+            </div>
+            
+            <div class="social-icons">
+                <a href="YOUR-LINKEDIN-URL" target="_blank" title="LinkedIn Profile">
+                    <i class="fab fa-linkedin"></i> 
+                </a>
+                </div>
+            
+            </div>
+
+        <div class="contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn submit-btn">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+    <script src="app.js"></script>
+</body>
+</htm
