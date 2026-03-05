@@ -488,3 +488,43 @@ form input, form textarea {
         margin-bottom: 30px;
     }
 }
+
+.hero-subtext{
+  margin-top: 14px;
+  max-width: 520px;
+  color: #cfcfcf;
+}
+
+.hero-cta{
+  margin-top: 18px;
+  display:flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-outline{
+  background: transparent;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.btn-outline:hover{
+  background: var(--accent-color);
+  color: var(--background-color);
+}
+
+.hero-social{
+  margin-top: 16px;
+  display:flex;
+  gap: 14px;
+  font-size: 26px;
+}
+
+.muted{
+  color: #b5b5b5;
+}
+
+.small-note{
+  margin-top: 10px;
+  font-size: 13px;
+}

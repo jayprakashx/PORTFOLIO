@@ -1,208 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jayprakash - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Jay Prakash Bahalia | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/a2e0e6ad5d.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-    <header class="main-header">
-        <div class="logo">Jayprakash</div>
-        <nav class="main-nav">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <header class="main-header">
+    <div class="logo">Jay</div>
 
-    <section id="home" class="hero-section">
-        
-        <div class="hero-text">
-            <p class="role-text">UI/UX Designer & Developer</p>
-            <h1>
-                Hi, I'm <span class="accent-color">Jayprakash</span>
-                <br>
-                from India
-            </h1>
-            </div>
-        
-        <div class="hero-image-container">
-            <img src="port2-Photoroom.png" alt="Jayprakash Portfolio Photo">
-        </div>
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    </section>
+  <!-- HERO SECTION -->
+  <section id="home" class="hero-section">
+    <div class="hero-text">
+      <p class="role-text">Full Stack Developer | MERN Stack</p>
 
-   <div id="about" class="page-section">
-    
+      <h1>
+        Hi, I'm <span class="accent-color">Jay Prakash</span><br />
+        from India
+      </h1>
+
+      <p class="hero-subtext">
+        I build modern web applications using React, Node.js, Express and MongoDB.
+        <br />
+        Currently open for <span class="accent-color">Internships and Freelance Projects</span>.
+      </p>
+
+      <div class="hero-cta">
+        <a class="btn" href="#portfolio">View Projects</a>
+        <a class="btn btn-outline" href="#contact">Hire Me</a>
+      </div>
+
+      <div class="hero-social">
+        <a href="https://github.com/jayprakashx" target="_blank" rel="noreferrer" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/jay-prakash-bahalia-90a3aa30b" target="_blank" rel="noreferrer" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image-container">
+      <img src="port2-Photoroom.png" alt="Jay Prakash Portfolio Photo" />
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="page-section">
     <h2>About Me</h2>
+
     <p class="bio-text-main">
-        I’m Jay Prakash, a passionate web developer currently learning the MERN Stack. I love turning 
-        ideas into functional and visually appealing web apps using HTML, CSS, and JavaScript, and 
-        I’m now exploring React for dynamic user interfaces. I’ve built projects like a To-Do List App, 
-        Weather App, and a College Management System in hackathons. I believe in learning by building 
-        and constantly improving my skills every day.
+       I’m Jay Prakash Bahalia, a Full Stack Developer focused on the MERN stack.
+       I build user-friendly web apps with clean UI and strong backend APIs. I also care about
+      <strong>user psychology</strong>—how people think, feel, and behave while using a product—
+      so my interfaces are simple, motivating, and easy to navigate.
+      I’m currently <span class="accent-color"><strong>open to internships and freelance work</strong></span>.
     </p>
 
     <div class="tab-titles">
-        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> 
-        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-        <p class="tab-links" onclick="opentab('education')">Education</p>
+      <p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
+      <p class="tab-links" onclick="opentab(event,'experience')">Experience</p>
+      <p class="tab-links" onclick="opentab(event,'education')">Education</p>
     </div>
-    
+
     <div class="tab-contents active-tab" id="skills">
-        <h2>SKILLS</h2>
-        <div class="skill-category">
-            <h3>Frontend</h3>
-            <p>HTML5, CSS3, JavaScript (ES6), React</p>
-        </div>
-        <div class="skill-category">
-            <h3>Tools</h3>
-            <p>Git, GitHub, VS Code, Figma</p>
-        </div>
-        <div class="skill-category">
-            <h3>Backend (Upcoming)</h3>
-            <p>Node.js, Express.js, MongoDB</p>
-        </div>
+      <h2>Skills</h2>
+
+      <div class="skill-category">
+        <h3>Frontend</h3>
+        <p>HTML, CSS, JavaScript, React</p>
+      </div>
+
+      <div class="skill-category">
+        <h3>Backend</h3>
+        <p>Node.js, Express.js</p>
+      </div>
+
+      <div class="skill-category">
+        <h3>Database</h3>
+        <p>MongoDB</p>
+      </div>
+
+      <div class="skill-category">
+        <h3>Tools</h3>
+        <p>Git, GitHub, VS Code, Vercel</p>
+      </div>
     </div>
 
     <div class="tab-contents" id="experience">
-        <h2> Experience</h2>
-        <ul>
-            <li>
-                <strong>Smart India Hackathon (2025) — College Management System</strong><br>
-                Worked on a team project to develop a management system handling student and admin data.
-            </li>
-            <li>
-                <strong>Frontend Developer (Self Projects)</strong><br>
-                Built To-Do List, Weather App, and Quote Generator using HTML, CSS, and JavaScript.
-            </li>
-            <li>
-                <strong>Open Source & Learning</strong><br>
-                Regularly pushing code on GitHub and improving skills in React and JavaScript.
-            </li>
-        </ul>
-    </div>
-    
-    <div class="tab-contents" id="education">
-        <h2> Education</h2>
-        <h3>B.Tech in Computer Science</h3>
-        <p><strong>GITA AUTONOMOUS COLLEGE, BHUBNESWAR</strong> — 2023 to 2026</p>
-        <p>Currently pursuing 5th Semester | Focus: Full Stack Web Development & Java DSA</p>
-    </div>
-  
-</div>
+      <h2>Experience</h2>
+     <ul>
+      <li>
+       <strong>Software Development Intern — JSL</strong><br />
+       Worked on a Vehicle Management System: validation, debugging, database operations and SDLC-based development.
+      </li>
+      <li>
+      <strong>Software Development Trainee — OCAC</strong><br />
+      Training in full stack development and building MERN apps with REST APIs.
+      </li>
+     <li>
+      <strong>Freelance Project — School Management Website</strong><br />
+        Built and deployed a school website as a real client project (MERN-based) to improve digital presence.
+       </li>
+      </ul>
+   </div>
 
-       <section id="portfolio" class="page-section">
-       <h2>My Work</h2>
+   <div class="tab-contents" id="education">
+     <h2>Education</h2>
+      <h3>B.Tech in Computer Science</h3>
+      <p><strong>GITA Autonomous College, Bhubaneswar</strong></p>
+        <p>2023 - 2027 (Expected)</p>
+
+     <h3 style="margin-top:16px;">Certifications</h3>
+     <ul>
+       <li>Solutions Architecture Job Simulation — Forage</li>
+      <li>Full Stack MERN Live Class — Underrated Coder</li>
+         </ul>
+      </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="portfolio" class="page-section">
+    <h2>My Projects</h2>
 
     <div class="project-list">
-        
-       <section id="projects">
-  <h2>🚀 My Projects</h2>
-  <div class="project-list">
-    
-    <!-- To-Do List -->
-    <div class="project-card">
-      <img src="todo-screenshot.jpg" alt="Screenshot of To-Do List App">
-      <div class="layer">
-        <h3>Persistent To-Do List</h3>
-        <p>A client-side task manager that allows users to create, edit, and delete tasks. 
-        Demonstrates CRUD operations and data persistence using Vanilla JavaScript and Local Storage.</p>
-        <div class="tech-stack">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript (Local Storage)</span>
-        </div>
-        <div class="project-links">
-          <a href="https://jayprakashx.github.io/TO-DO-list-Web-app/" target="_blank">🔗 Live Demo</a>
-          <a href="https://github.com/jayprakashx/TO-DO-list-Web-app" target="_blank">💻 GitHub Code</a>
+
+      <!-- ShopEase -->
+      <div class="project-card">
+        <img src="shopease-screenshot.jpg" alt="Screenshot of ShopEase E-Commerce Platform">
+        <div class="layer">
+          <h3>ShopEase — Modern E-Commerce Platform</h3>
+          <p>
+            MERN e-commerce platform with authentication, product catalog, and order workflow.
+            Built REST APIs using Node.js, Express and MongoDB.
+          </p>
+          <div class="tech-stack">
+            <span>React</span><span>Node</span><span>Express</span><span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/jayprakashx/ShopEase-Modern-E-Commerce-Platform" target="_blank" rel="noreferrer">
+              💻 GitHub
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
-   
-    <div class="project-card">
-      <img src="weather-screenshot.jpg" alt="Screenshot of SkyPulse Weather Dashboard">
-      <div class="layer">
-        <h3>SkyPulse – Real-Time Weather Dashboard</h3>
-        <p>A functional weather dashboard that shows real-time data such as temperature, humidity, wind, pressure, 
-        sunrise, and sunset using the OpenWeatherMap API. Designed with a clean and responsive interface.</p>
-        <div class="tech-stack">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript (API Integration)</span>
+      <!-- Saraswati Shishu Mandir Website (Freelance - MERN) -->
+     <div class="project-card">
+      <img src="school-website-screenshot.jpg" alt="Screenshot of Saraswati Shishu Mandir Website">
+       <div class="layer">
+       <h3>Saraswati Shishu Mandir Website (Freelance - MERN)</h3>
+      <p>
+        A MERN-based website built for a real client to improve the school’s digital presence.
+        Includes responsive UI, clean navigation, and scalable structure for future updates.
+       </p>
+       <div class="tech-stack">
+        <span>React</span><span>Node</span><span>Express</span><span>MongoDB</span>
         </div>
-        <div class="project-links">
-          <a href="https://jayprakashx.github.io/SkyPulse---Real-Time-Weather-Dashboard/" target="_blank">🔗 Live Demo</a>
-          <a href="https://github.com/jayprakashx/SkyPulse---Real-Time-Weather-Dashboard" target="_blank">💻 GitHub Code</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- College Management System -->
-    <div class="project-card">
-      <img src="edubridge-screenshot.jpg" alt="Screenshot of EduBridge College Management System">
-      <div class="layer">
-        <h3>EduBridge – College Management System</h3>
-        <p>A full-featured web project built to manage student, faculty, and admin operations efficiently. 
-        Created for Smart India Hackathon participation and demonstrates strong front-end architecture.</p>
-        <div class="tech-stack">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-        </div>
-        <div class="project-links">
-          <a href="https://jayprakashx.github.io/Edu-Bridge/" target="_blank">🔗 Live Demo</a>
-          <a href="https://github.com/jayprakashx/Edu-Bridge" target="_blank">💻 GitHub Code</a>
+      <div class="project-links">
+        <a href="https://saraswati-shishu-mandir-kiapada-jaj.vercel.app" target="_blank" rel="noreferrer">
+          🔗 Live
+         </a>
         </div>
       </div>
+     </div>
+      <!-- SkyPulse -->
+      <div class="project-card">
+        <img src="weather-screenshot.jpg" alt="Screenshot of SkyPulse Weather Dashboard">
+        <div class="layer">
+          <h3>SkyPulse — Real-Time Weather Dashboard</h3>
+          <p>
+            Real-time weather dashboard using OpenWeather API showing temperature, humidity and wind data.
+          </p>
+          <div class="tech-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://jayprakashx.github.io/SkyPulse---Real-Time-Weather-Dashboard/" target="_blank" rel="noreferrer">
+              🔗 Live
+            </a>
+            <a href="https://github.com/jayprakashx/SkyPulse---Real-Time-Weather-Dashboard" target="_blank" rel="noreferrer">
+              💻 GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BPUT AI Career Navigator -->
+      <div class="project-card">
+        <img src="career-navigator-screenshot.jpg" alt="Screenshot of BPUT AI Career Navigator">
+        <div class="layer">
+          <h3>BPUT AI Career Navigator — Smart India Hackathon</h3>
+          <p>
+            AI-assisted career guidance platform using student input datasets.
+            Built for Smart India Hackathon work.
+          </p>
+          <div class="tech-stack">
+            <span>Web</span><span>UI</span><span>Data</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/jayprakashx/AI-carrier-mentor" target="_blank" rel="noreferrer">
+              💻 GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </section>
 
-  </div>
-</section>
-
-</section>
-
-    <section id="contact" class="page-section">
+  <!-- CONTACT -->
+  <section id="contact" class="page-section">
     <h2>Contact Me</h2>
 
     <div class="contact-row">
-        
-        <div class="contact-left">
-            <p>I am currently available for freelance projects and new opportunities. Feel free to connect!</p>
-            
-            <div class="contact-info">
-                <p>
-                    <i class="fas fa-envelope"></i> <a href="mailto:jayprakashbahalia@gmail.com">jayprakashbahalia@gmail.com</a>
-                </p>
-                <p>
-                    <i class="fas fa-phone"></i> <a href="tel:+918457844495">+91 84578 44495</a>
-                </p>
-            </div>
-            
-            <div class="social-icons">
-                <a href="YOUR-LINKEDIN-URL" target="_blank" title="LinkedIn Profile">
-                    <i class="fab fa-linkedin"></i> 
-                </a>
-                </div>
-            
-            </div>
+      <div class="contact-left">
+        <p>I’m open for internships, freelance projects and collaborations.</p>
 
-        <div class="contact-right">
-            <form>
-                <input type="text" name="Name" placeholder="Your Name" required>
-                <input type="email" name="Email" placeholder="Your Email" required>
-                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                <button type="submit" class="btn submit-btn">Send Message</button>
-            </form>
+        <div class="contact-info">
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:jayprakashbahalia5@gmail.com">jayprakashbahalia5@gmail.com</a>
+          </p>
+
+          <p>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+918457844495">+91 8457844495</a>
+          </p>
         </div>
 
+        <div class="social-icons">
+          <a href="https://github.com/jayprakashx" target="_blank" rel="noreferrer" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/jay-prakash-bahalia-90a3aa30b" target="_blank" rel="noreferrer" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="6" placeholder="Your Message"></textarea>
+
+          <button type="submit" class="btn submit-btn">Send Message</button>
+        </form>
+      </div>
     </div>
-</section>
-    <script src="app.js"></script>
+  </section>
+
+  <script src="app.js"></script>
 </body>
-</htm
+</html>
